@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-style: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: deepskyblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(0, 0, 0);
+        }
+        nav{
+            float:left;
+            width: 20%;
+            height: 300px;
+            background-color: paleturquoise;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0px;
+        }
+        article{
+            float:left;
+            width: 80%;
+            height: 300px;
+            background-color: mediumpurple;
+            padding: 20px;
+        }
+        section::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: slateblue;
+            padding: 10px;
+            text-align: center;
+            color: honeydew;
+        }
+        @media(max-width:600px){
+            nav,article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2> Messi campeón del mundo!!</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://acortar.link/pjdVzH"target="_blank">Final Francia-Argentina</a></li>
+                <li><a href="https://acortar.link/Rf1PrC" target="_blank">Cómo se vivio el mundial</a></li>
+                <li><a href="https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/qatar2022" target="_blank">Mundial Catar 2022</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Alineaciones del partido</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga reprehenderit eveniet enim libero fugiat corrupti distinctio esse et officia, iusto molestias repellendus accusamus, earum nemo repudiandae cum voluptas voluptatibus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur quod aspernatur quos dolor officiis itaque eaque corporis sequi? Nisi nulla ipsam temporibus eos? Porro neque iusto dolore dolor ex.</p>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; ESPN 2023</p>
+        <br>
+        <p>Félix Aguilasocho Nicolás. Layouts 08/02/2023</p>
+    </footer>
+</body>
+</html>
