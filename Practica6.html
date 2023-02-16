@@ -5,22 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegación en HTML</title>
+    <style>
+        .menu{
+            background-color: cornflowerblue;
+
+        }
+        .menu:hover{
+            background-color: rgb(34, 34, 117);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contenido{
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding: 5px;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: azure;">
     <h1>Navegación en HTML</h1><hr>
     <h3>Página de inicio</h3>
     <div style="border: 1px solid black;">
-        <div style="border-bottom: 1px solid black; padding: 10px;">
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
             <a href="Practica6_Noticias.html">Noticias</a>
         </div>
-        <div style="border-bottom: 1px solid black; padding: 10px;">
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
             <a href="Practica6_Galeria.html">Galería</a>
         </div>
-        <div style="border-bottom: 1px solid black; padding: 10px;">
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
             <a href="Practica6_Contacto.html">Contacto</a>
         </div>
     </div>
-        <H5> Félix Aguilasocho Nicolás 13/02/23 - &COPY;2023 - nicolas_felix21@gmail.com</H5>
+    <div class="contenido">
+        <h3>Bienvenido a mi página!</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi enim iste earum esse aut nam cum. Sapiente sequi excepturi aspernatur expedita dolorum voluptatum ducimus adipisci, praesentium molestias dolorem temporibus provident.</p>
+    </div>
+    <H4> Félix Aguilasocho Nicolás 13/02/23 - &COPY;2023 - nicolas_felix21@gmail.com</H4>
 
 </body>
 </html>

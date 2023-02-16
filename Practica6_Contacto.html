@@ -5,15 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <style>
+        .menu{
+            background-color: cornflowerblue;
+
+        }
+        .menu:hover{
+            background-color: rgb(34, 34, 117);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contenido{
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding: 5px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Contacto</h1> <hr>
-    <h3>Correo electronico</h3>
-    <p>nicolas.felix21@cetis107.edu.mx</p>
-    <h3>Ubicación</h3>
-    <img src="mapa.jpg" alt="" width="500px";>
-    <div style="border: 1px solid black; padding: 10px; background-color: cadetblue; text-align: center;">
-        <a href="Practica6.html">Regresar al inicio</a>
+<body style="background-color: azure;">
+    <h1>Navegación en HTML</h1><hr>
+    <h3>Página de inicio</h3>
+    <div style="border: 1px solid black;">
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Noticias.html">Noticias</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Galeria.html">Galería</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Contacto.html">Contacto</a>
+        </div>
     </div>
+    <div class="contenido">
+         <h1 >Contacto</h1> <hr>
+        <h3>Correo electronico</h3>
+        <p>nicolas.felix21@cetis107.edu.mx</p>
+        <h3>Ubicación</h3>
+        <img src="mapa.jpg" alt="" width="500px";>
+        <hr>
+        <div style="border: 1px solid black; padding: 10px; background-color: cornflowerblue; text-align: center;" class="menu">
+            <a href="Practica6.html">Regresar al inicio</a>
+        </div>
+    </div>
+    
 </body>
 </html>

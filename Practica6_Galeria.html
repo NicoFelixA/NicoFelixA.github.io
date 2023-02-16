@@ -5,19 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de fotos</title>
+    <style>
+        .menu{
+            background-color: cornflowerblue;
+
+        }
+        .menu:hover{
+            background-color: rgb(34, 34, 117);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contenido{
+            background-color: lightblue;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding: 5px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Galería de fotos</h1> <hr>
-    <div style="border: 2px solid black; padding: 20px;">
-        <div>
-            <img src="corazon.jpg" alt="" style="border: 1px solid black; width: 30%;">
-            <img src="pajaroo.jpg" alt="" style="border: 1px solid black; width: 30%;">
-            <img src="hombre.jpg" alt="" style="border: 1px solid black; width: 30%;">
+<body style="background-color: azure;">
+    <h1>Navegación en HTML</h1><hr>
+    <h3>Página de inicio</h3>
+    <div style="border: 1px solid black;">
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Noticias.html">Noticias</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Galeria.html">Galería</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Contacto.html">Contacto</a>
         </div>
     </div>
-        <br>
-    <div style="border: 1px solid black; padding: 10px; background-color: cadetblue; text-align: center;">
-        <a href="Practica6.html">Regresar al inicio</a>
     </div>
+        <br>
+        <div class="contenido">
+            <h1 style="text-align: center;">Galería de fotos</h1> <hr>
+    <div style="border: 2px solid black; padding: 20px;">
+        <div>
+            <img src="corazon.jpg" alt="" style="border: 1px solid black; width: 33%;">
+            <img src="pajaroo.jpg" alt="" style="border: 1px solid black; width: 33%;">
+            <img src="hombre.jpg" alt="" style="border: 1px solid black; width: 32%;">
+        </div>
+        <br>
+        <div style="border: 1px solid black; padding: 10px; background-color: cornflowerblue; text-align: center;" class="menu"> 
+            <a href="Practica6.html">Regresar al inicio</a>
+        </div>
+    </div>
+    
+    
 </body>
 </html>

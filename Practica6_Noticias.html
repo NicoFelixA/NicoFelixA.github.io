@@ -5,17 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
+    <style>
+        .menu{
+            background-color: cornflowerblue;
+
+        }
+        .menu:hover{
+            background-color: rgb(34, 34, 117);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contenido{
+            background-color: lightblue;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding: 5px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Noticias</h1>
-    <h3>Noticia 1</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloremque consequuntur inventore, rem, porro sed nam saepe cupiditate obcaecati temporibus similique mollitia soluta aut quasi aspernatur harum dolorem dolore ab!</p>
-    <h3>Noticia 2</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse voluptates ut sed delectus? Necessitatibus fugit eum vero, quae ut soluta vel exercitationem voluptatibus? Dolorem quia ad cumque consequatur non.</p>
-    <h3>Noticia 3</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus cupiditate nisi, atque inventore officiis reprehenderit minima sapiente blanditiis provident at eos alias nam molestiae modi animi fuga obcaecati recusandae!</p>
-    <div style="border: 1px solid black; padding: 10px; background-color: cadetblue; text-align: center;">
-        <a href="Practica6.html">Regresar al inicio</a>
+    
+<body style="background-color: azure;">
+    <h1>Navegación en HTML</h1><hr>
+    <h3>Página de inicio</h3>
+    <div style="border: 1px solid black;">
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Noticias.html">Noticias</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Galeria.html">Galería</a>
+        </div>
+        <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+            <a href="Practica6_Contacto.html">Contacto</a>
+        </div>
+    </div>
+    <div class="contenido">
+
+        <h1 style="text-align: center;">Noticias</h1>
+        <hr>
+        <h3>Noticia 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloremque consequuntur inventore, rem, porro sed nam saepe cupiditate obcaecati temporibus similique mollitia soluta aut quasi aspernatur harum dolorem dolore ab!</p>
+        <hr><h3>Noticia 2</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse voluptates ut sed delectus? Necessitatibus fugit eum vero, quae ut soluta vel exercitationem voluptatibus? Dolorem quia ad cumque consequatur non.</p>
+        <hr><h3>Noticia 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus cupiditate nisi, atque inventore officiis reprehenderit minima sapiente blanditiis provident at eos alias nam molestiae modi animi fuga obcaecati recusandae!</p>
+        <div style="border: 1px solid black; padding: 10px; background-color: cornflowerblue; text-align: center;" class="menu">
+            <a href="Practica6.html">Regresar al inicio</a>
+        </div>
     </div>
 </body>
 </html>
