@@ -1,0 +1,39 @@
+        button{
+            background-color: rgb(158, 118, 9);
+            color: white;
+            transition: background-color 0.5s, transform 0.5s;
+        }
+    
+        button:hover {
+            background-color: rgb(75, 57, 0);
+            transform: scale(1.2);
+        }
+       
+        img {
+			transition: transform 0.5s;
+		}
+
+		img:hover {
+			transform: scale(1.2);
+		}
+
+        b{
+			 font-size: large;
+             transition-duration:0.5s ;
+		 }
+		 b:hover {
+			 font-size: x-large;
+			 background-color: rgb(209, 138, 6);
+			 padding: 4px;
+		 }
+         
+        div {
+			background-color: rgb(92, 63, 0);
+			width: 100px;
+			height: 100px;
+			transition: background-color 0.5s, transform 0.5s, opacity 0.5s, left 0.5s, top 0.5s;
+		}
+
+		div:hover {
+			transform: rotate(90deg);
+		}
