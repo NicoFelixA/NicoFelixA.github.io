@@ -7,30 +7,35 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   <style>
-  *{
-    max-width: 100%;
-     box-sizing: border-box;
-   }
-   body{
+    * {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    body {
       font-style: Arial, Helvetica, sans-serif;
     }
-    .navbar-brand{
+
+    .navbar-brand {
       color: rgb(0, 0, 0);
-      transition-duration:1s ;
+      transition-duration: 1s;
     }
-    .navbar-brand:hover{
+
+    .navbar-brand:hover {
       color: black;
       font-size: x-large;
-    
+
     }
-    #banner{
-      padding: 0 50px;  
+
+    #banner {
+      padding: 0 50px;
       background-image: url(ImagenesLogra/Banner.jpeg);
       height: 98vh;
       background-size: cover;
       background-position: center;
     }
-    #banner::before{
+
+    #banner::before {
       content: '';
       background: rgba(77, 77, 92, 0.6);
       position: absolute;
@@ -38,9 +43,10 @@
       height: 100%;
       left: 0;
     }
-    .contenido-banner{
+
+    .contenido-banner {
       text-align: center;
-      position: relative; 
+      position: relative;
       color: #fff;
       height: 100%;
       display: flex;
@@ -48,16 +54,18 @@
       justify-content: center;
     }
 
-    .contenido-banner h3{
+    .contenido-banner h3 {
       font-size: 30px;
       font-weight: 400;
       padding: 10px 0px;
     }
-    .bot{
+
+    .bot {
       margin-top: 15px;
       text-align: center;
     }
-    .boton-empezar{
+
+    .boton-empezar {
       text-decoration: none;
       color: #fff;
       border: 1px solid #06375f;
@@ -65,58 +73,69 @@
       width: 10%;
       transition: all 0.4s;
     }
-    .boton-empezar:hover{
+
+    .boton-empezar:hover {
       background: #042744;
 
     }
-    .nav-item{
+
+    .nav-item {
       padding-left: 10px;
     }
+
     #map {
       height: 400px;
       width: 100%;
     }
-    iframe{
+
+    iframe {
       position: relative;
       width: 50%;
       transform: translate(50%);
     }
-    .d-block{
+
+    .d-block {
       width: 70px;
     }
-    .logo{
+
+    .logo {
       transition-duration: 0.5s;
       width: 70px;
     }
-    .logo:hover{
+
+    .logo:hover {
       transform: scale(1.2);
     }
-    .lg-layout{
+
+    .lg-layout {
       padding: 5px;
-      font-size:small ;
+      font-size: small;
       position: relative;
       width: 90%;
       transform: translate(90%);
     }
-    .map{
+
+    .map {
       text-align: start;
     }
-    a{
+
+    a {
       text-decoration: none;
       color: white;
     }
-    .lg-fixed-menu{
+
+    .lg-fixed-menu {
       background-color: #001e33dc;
       width: 100%;
-
     }
-    .nav{
-            float:left;
-            width: 50%;
-            height: 300px;
-            background-color: rgb(5, 26, 26);
-            padding: 20px;
-            background-image: url(ImagenesLogra/imgnav.jpg.jpeg);
+
+    .nav {
+      float: left;
+      width: 50%;
+      height: 300px;
+      background-color: rgb(5, 26, 26);
+      padding: 20px;
+      background-image: url(ImagenesLogra/imgnav.jpg.jpeg);
     }
     .article{
             float:left;
@@ -135,9 +154,13 @@
           margin-top: 30px;
         }
     @media(max-width:600px){
-            header, footer{
+            header, footer, .article{
                 width: 100%;
                 height: auto;
+            }
+            .nav{
+              height: 200px;
+              width: 100%;
             }
           }
   </style>
@@ -284,7 +307,7 @@
         <footer>
           <div class="container">
             <div class="row">
-              <h3>Registro de datos:</h3>
+              <h3 style="margin-top: 20px;">Registro de datos:</h3>
               <div class="col-md-6">
                 <h4>Te ayudaremos a conseguir la casa de tus sueños!</h4>
                 <p>Recibe noticias y actualizaciones sobre nuestros productos y servicios directamente en tu correo electrónico.</p>
