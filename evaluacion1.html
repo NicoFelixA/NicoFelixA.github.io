@@ -8,6 +8,7 @@
 
   <style>
   *{
+    max-width: 100%;
      box-sizing: border-box;
    }
    body{
@@ -33,7 +34,7 @@
       content: '';
       background: rgba(77, 77, 92, 0.6);
       position: absolute;
-      width: 300vh;
+      width: 203vh;
       height: 100%;
       left: 0;
     }
@@ -170,18 +171,18 @@
                 <img src="Logra.jpg" alt="" class="logo" >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Casas</a>
+                <a class="nav-link active" aria-current="page" href="#Casas">Casas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ubicaciones</a>
+                <a class="nav-link" href="https://goo.gl/maps/u3yW8SZPRzDKUWDd7">Ubicaciones</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Mas opciones
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Contactar</a></li>
-                  <li><a class="dropdown-item" href="#">Dudas</a></li>
+                  <li><a class="dropdown-item" href="tel: +526674518294">Contactar</a></li>
+                  <li><a class="dropdown-item" href="#contacto">Dudas</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Mas informacion</a></li>
                 </ul>
@@ -199,13 +200,13 @@
         <div class="contenido-banner">
           <h3>Venta - Renta - Compra <br>de inmuebles</h3>
           <div class="bot">
-          <a href="#"class="boton-empezar">Empezar</a>
+          <a href="#Casas"class="boton-empezar">Empezar</a>
         </div>
         </div>
       </section>
       <div class="tit">
       <div class="container">
-        <h2 style="text-align: center;">Propiedades destacadas</h2>
+        <h2 id="Casas" style="text-align: center; padding: 15px;">Propiedades destacadas</h2>
         <hr>
         <div class="row">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -306,12 +307,12 @@
                       </select><br><br>
                   <label for="presupuesto">Presupuesto</label> <br><input type="number"> <br><br>
                     <label for="name">Nombre completo</label>   <br>  <input type="text" placeholder="Teclea nombre"required> 
-                  </div>  
+                  </div>
                   <button type="submit" class="btn btn-outline-light" style="position: relative; height: 30%; transform: translate(0%,30%); margin-bottom: 20px;">Enviar</button>
                 </form>
               </div>
               <div class="col-md-6">
-                <h4>Contacto</h4>
+                <h4 id="contacto">Contacto</h4>
                 <ul class="list-unstyled">
                   <li><i class="fa fa-map-marker"></i> Dirección: 123 Calle Principal, Ciudad, País</li>
                   <li><i class="fa fa-phone"></i> Teléfono: +1234567890</li>
