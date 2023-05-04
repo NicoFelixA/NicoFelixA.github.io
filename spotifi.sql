@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-04-2023 a las 04:15:27
+-- Tiempo de generación: 04-05-2023 a las 04:21:24
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -42,7 +42,11 @@ INSERT INTO `albumes` (`id`, `artista_id`, `nombre`) VALUES
 (1, 1, 'Vessel'),
 (2, 2, 'Aries'),
 (3, 3, 'Un verano sin ti'),
-(4, 4, 'Home run');
+(4, 4, 'Home run'),
+(5, 6, 'position'),
+(6, 8, 'telequinesis'),
+(7, 7, 'sen2Kbrones'),
+(8, 5, 'una noche sin ti');
 
 -- --------------------------------------------------------
 
@@ -64,7 +68,11 @@ INSERT INTO `album_canciones` (`id`, `album_id`, `cancion_id`) VALUES
 (1, 1, 1),
 (2, 2, 2),
 (3, 3, 3),
-(4, 4, 4);
+(4, 4, 4),
+(5, 5, 6),
+(6, 7, 8),
+(7, 8, 5),
+(8, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -86,7 +94,11 @@ INSERT INTO `artistas` (`id`, `nombre`, `imagen`) VALUES
 (1, 'Twenty one pilots', 'https://media.timeout.com/images/103327219/image.jpg'),
 (2, 'Luis miguel', 'https://imagenes.elpais.com/resizer/0qkgT2RrF3RsR2ao0b2POrUxb5w=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/NVBQKQRHGFDJRCC4Y7K2'),
 (3, 'Bad bunny', 'https://yt3.googleusercontent.com/7tCfeCWH4arhsTM-4Rz4IxWieQbegzibeXlG-kbytAujdk5dr2K0gBb8NG0Cvk6lB1dPkjyd=s900-c-k-c0x00ffffff-no-rj'),
-(4, 'Paulo londra', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQjVausRrPshGW9OqCdY7YPVT1EEo1RhglvU74nMHGw&s');
+(4, 'Paulo londra', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQjVausRrPshGW9OqCdY7YPVT1EEo1RhglvU74nMHGw&s'),
+(5, 'Natalia lafourcade', 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQw'),
+(6, 'Ariana Grande', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSauPM9As4O2NuX8E4mW7Y3OxNZOMAaPMStA&usqp=CAU'),
+(7, 'Eladio carrion', 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQw'),
+(8, 'Mora', 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQw');
 
 -- --------------------------------------------------------
 
@@ -112,7 +124,11 @@ INSERT INTO `canciones` (`id`, `nombre`, `artista_id`, `duracion`, `genero_id`, 
 (1, 'Stressed Out', 1, '00:03:49', 11, '2015-04-18', 0),
 (2, 'Delirio', 2, '00:04:32', 12, '2008-05-18', 0),
 (3, 'Coco chanel', 3, '00:03:33', 10, '2023-03-16', 0),
-(4, 'Homerun', 4, '00:02:45', 11, '2019-06-02', 0);
+(4, 'Homerun', 4, '00:02:45', 11, '2019-06-02', 0),
+(5, 'Amor completo', 5, '00:04:22', 12, '2017-02-14', 0),
+(6, 'Thank u next', 6, '00:04:26', 11, '2020-07-20', 0),
+(7, 'Tuyo', 8, '00:03:22', 10, '2022-07-19', 0),
+(8, 'Si la calle llama', 7, '00:03:33', 10, '2022-11-23', 0);
 
 -- --------------------------------------------------------
 
@@ -134,7 +150,12 @@ INSERT INTO `favoritas` (`id`, `usuario_id`, `cancion_id`) VALUES
 (1, 1, 3),
 (2, 2, 2),
 (3, 4, 1),
-(4, 3, 4);
+(4, 3, 4),
+(5, 4, 8),
+(6, 8, 5),
+(7, 7, 6),
+(8, 2, 1),
+(9, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -155,7 +176,10 @@ INSERT INTO `generos` (`id`, `nombre`) VALUES
 (9, 'kpop'),
 (10, 'reagueton'),
 (11, 'pop'),
-(12, 'jazz');
+(12, 'jazz'),
+(13, 'rock'),
+(14, 'boleros'),
+(15, 'acapella');
 
 -- --------------------------------------------------------
 
@@ -222,7 +246,11 @@ INSERT INTO `playlist_canciones` (`id`, `playlist_id`, `cancion_id`) VALUES
 (1, 1, 2),
 (2, 2, 3),
 (3, 3, 1),
-(4, 4, 4);
+(4, 4, 4),
+(5, 3, 5),
+(6, 4, 8),
+(7, 1, 7),
+(8, 2, 6);
 
 -- --------------------------------------------------------
 
@@ -248,7 +276,11 @@ INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `contraseña`, `usuario`, `tel
 (1, 'Nicolas felix aguilasocho', 'nicolasfelixag@gmail.com', '22373282', 'nicofa', '3324342423', 1),
 (2, 'Michelle gamez', 'michellegamez123@gmail.com', '23e2323', 'michellegamez', '232432323', 4),
 (3, 'Sofia Felix', 'sofifelixa@gmail.com', 'chocolateconfresa', 'sofiafelix21', '998172489', 2),
-(4, 'Joseph Eloir', 'mezacastañeda@gmail.com', '32454nN2', 'josefina', '763728992', 3);
+(4, 'Joseph Eloir', 'mezacastañeda@gmail.com', '32454nN2', 'josefina', '763728992', 3),
+(5, 'Luis angel', 'luisito12@gmail.com', '23y73hd', 'luisitoelpillo', '234321213', 3),
+(6, 'Kenia guerrero', 'robloxita@gmail.com', 'q732ygbdb', 'roblocian', '83278398', 2),
+(7, 'Melissa', 'messi@cetis107.edu.mx', '7y7hdsb', 'messi', '78237278', 4),
+(8, 'brunette', 'bru@gmail.com', 'uqhusnaa', 'Bruneta', '323233232', 1);
 
 --
 -- Índices para tablas volcadas
@@ -335,37 +367,37 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `albumes`
 --
 ALTER TABLE `albumes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `album_canciones`
 --
 ALTER TABLE `album_canciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `artistas`
 --
 ALTER TABLE `artistas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `canciones`
 --
 ALTER TABLE `canciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `favoritas`
 --
 ALTER TABLE `favoritas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `generos`
 --
 ALTER TABLE `generos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `membresias`
@@ -383,13 +415,13 @@ ALTER TABLE `playlist`
 -- AUTO_INCREMENT de la tabla `playlist_canciones`
 --
 ALTER TABLE `playlist_canciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restricciones para tablas volcadas
