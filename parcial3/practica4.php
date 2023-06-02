@@ -15,63 +15,83 @@
 
         if($pregunta1=="b"){
             $calificacion++;
+            echo "Pregunta 1 ";
             echo "<img src='correcta.png' width='3%'><hr>";
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 1 ";
+            echo " La respuesta era: b"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta2=="a"){
             $calificacion++; 
+            echo "Pregunta 2 ";
             echo "<img src='correcta.png' width='3%'><hr>";       
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 2 ";
+            echo " La respuesta era: a"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta3=="c"){
             $calificacion++;   
+            echo "Pregunta 3 ";
             echo "<img src='correcta.png' width='3%'><hr>";     
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 3 ";
+            echo " La respuesta era: c"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta4=="c"){
-            $calificacion++;        
-            echo "<img src='correcta.png' width='3%'><hr>";
+            $calificacion++;      
+            echo "Pregunta 4 ";  
+            echo "<img src='correcta.png' width='3%'><hr>" ;
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 4";
+            echo " La respuesta era: c"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta5=="b"){
             $calificacion++;
+            echo "Pregunta 5 ";
             echo "<img src='correcta.png' width='3%'><hr>";
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 5 ";
+            echo " La respuesta era: b"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta6=="a"){
             $calificacion++;
+            echo "Pregunta 6 ";
             echo "<img src='correcta.png' width='3%'><hr>";
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 6 " ;
+            echo " La respuesta era: a"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta7=="b"){
-            echo "<img src='correcta.png' width='3%'><hr>";
+            echo "Pregunta 7 ";
+            echo "<img src='correcta.png' width='3%'><hr>"  ;
             $calificacion++;
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 7 ";
+            echo " La respuesta era: b"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta8=="c"){
             $calificacion++;
-            echo "<img src='correcta.png' width='3%'><hr>";
+            echo "Pregunta 8 ";
+            echo "<img src='correcta.png' width='3%'><hr>" ;
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 8 " ;
+            echo " La respuesta era: c"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta9=="c"){
             $calificacion++;
+            echo "Pregunta 9 ";
             echo "<img src='correcta.png' width='3%'><hr>";
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 9 ";
+            echo " La respuesta era: c"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($pregunta10=="a"){
             $calificacion++;
+            echo "Pregunta 10 ";
             echo "<img src='correcta.png' width='3%'><hr>";
         }else{
-            echo "<img src='incorrecta.png' width='3%'><hr>";       
+            echo "Pregunta 10 ";
+            echo " La respuesta era: a"."<img src='incorrecta.png' width='3%'><hr>" ;       
         }
         if($calificacion>5 && $calificacion<=8){
             echo "Felicidades!!! Pasaste con " .$calificacion;
